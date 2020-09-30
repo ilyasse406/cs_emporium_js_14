@@ -16017,6 +16017,7 @@ readers do not read off random characters that represent icons */
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Poppins";
 }
 body header nav .navbar-brand {
@@ -16039,6 +16040,78 @@ body header nav div ul form #noir {
 }
 body header nav div ul form #connexion {
   border-radius: 0px;
+}
+body #section1 {
+  background-color: #F3F3F3;
+}
+body #section1 .row .col-7 {
+  padding: 95px;
+}
+body #section1 .row .col-7 h2 {
+  color: #DD4545;
+  font-size: 50px;
+}
+body #section1 .row .col-7 img {
+  height: 75px;
+}
+body #section1 .row .col-7 button {
+  background-color: #DD4545;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 10px;
+}
+body #section1 .row .col-5 img {
+  height: 500px;
+}
+body #section2 .row .col-4 {
+  margin: 0 7px;
+}
+body #section2 .row .col-4:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 200px;
+  background-color: #333;
+  background-image: url("../../public/img/services/service-1.jpg");
+  background-position: center;
+}
+body #section2 .row .col-4:first-child h1 {
+  color: white;
+  border-bottom: solid;
+  padding: 0 50px;
+}
+body #section2 .row .col-4:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 200px;
+  background-color: #333;
+  background-image: url("../../public/img/services/service-2.jpg");
+  background-position: center;
+}
+body #section2 .row .col-4:nth-child(2) h1 {
+  color: white;
+  border-bottom: solid;
+  padding: 0 70px;
+}
+body #section2 .row .col-4:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 200px;
+  background-color: #333;
+  background-image: url("../../public/img/services/slider-3.jpg");
+  background-position: center;
+}
+body #section2 .row .col-4:nth-child(3) h1 {
+  color: white;
+  border-bottom: solid;
+  padding: 0 90px;
 }
 
 /*# sourceMappingURL=style.css.map */
