@@ -16019,6 +16019,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins";
+  overflow-x: hidden;
 }
 body header nav .navbar-brand {
   font-size: 60px;
@@ -16145,6 +16146,53 @@ body #section4 button {
   border: none;
   padding: 10px;
   border-radius: 5px;
+}
+body #section6 {
+  overflow: hidden;
+}
+body #section6 .col-4 {
+  padding: 20px 80px;
+}
+body #section6 .col-4:first-child {
+  background-color: #F3F2F3;
+}
+body #section6 .col-4:first-child i {
+  font-size: 30px;
+}
+body #section6 .col-4:first-child button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: #343A40;
+  color: white;
+}
+body #section6 .col-4:nth-child(2) {
+  background-color: #DD4545;
+  color: white;
+}
+body #section6 .col-4:nth-child(2) i {
+  font-size: 30px;
+}
+body #section6 .col-4:nth-child(2) button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+body #section6 .col-4:nth-of-type(3) {
+  background-color: #F3F2F3;
+}
+body #section6 .col-4:nth-of-type(3) i {
+  font-size: 30px;
+}
+body #section6 .col-4:nth-of-type(3) button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: #343A40;
+  color: white;
+}
+body footer li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
