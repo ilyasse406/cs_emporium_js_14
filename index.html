@@ -12,7 +12,8 @@
     <!-- debut header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column">
-            <a class="navbar-brand my-3" href="#">emporium.</a>
+
+            <a class="navbar-brand my-3" href="#" id="main-title">emporium.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,6 +23,8 @@
 
                 <ul class="navbar-nav">
 
+
+                    <h1 class="mr-5 d-none" id="empo">emporium.</h1>
                     <li class="nav-item">
                         <a class="nav-link m-4 text-secondary" href="#">HOME</a>
                     </li>
@@ -50,12 +53,65 @@
 
                 </ul>
             </div>
+           
         </nav>
+        
     </header>
     <!-- fin header -->
 
     <!-- debut section 1  -->
     <section class="container-fluid" id="section1">
+        <div class="bg-white text-center d-none" id="popup">
+            <div class="row">
+                
+                <div class="col-6 pt-4">
+                    <div><h1><a href="" class="text-dark" id="sign-up">SIGN UP</a></h1></div>
+                    
+                    <hr>
+                    <form class="" id="formulaire">
+                        <div class="form-group text-left ml-3">
+                            <input type="email" placeholder="Email Adress" class="mb-3 w-75">
+                            
+                            <input type="password" placeholder="Password" class="mb-3 w-75">
+                            <div class="text-left "><button class="btn btn-info px-5">Sign up</button></div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="mb-2">
+                                <button class="btn btn-danger w-75"><i class="fab fa-google"> Connect with Google</i></button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary w-75"><i class="fab fa-facebook-f"></i> Connect with facebook</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                
+                <div class="col-6">
+
+                    <div id="exit"><a href=""><i class="far fa-times-circle"></i></a></div>
+                    <h1 class="text-uppercase text-center">
+                        <a href="" class="text-dark" id="register">Register</a> 
+                    </h1>
+                    <hr>
+                    <div id="maman" class="p-3 d-none">
+                        
+                        
+                        <div class="d-flex mb-3">
+                            <input type="text" placeholder="First Name" class="w-50 mr-3"><input type="text" placeholder="Last Name" class="w-50">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-100 mb-4">
+                        <div class="d-flex">
+                            <input type="password" placeholder="Password" class="w-50 mr-4"><input type="password"  placeholder="Confirm Password" class="w-50">
+                        </div>
+                        <div class="d-flex justify-content-start">
+    
+                            <button class="btn btn-info mt-3 w-50">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-7">
                 <h2>Shop at</h2>
@@ -69,7 +125,7 @@
             </div>
             <div class="col-5">
 
-                <img src="./public/img/slider-1.jpg" alt="">
+                <img src="./public/img/slider-1.jpg" alt="" class="img-fluid">
 
 
             </div>
@@ -103,73 +159,164 @@
 
     <!-- debut section 3 -->
     <section id="section3">
-        <h1 class="text-center mb-5">Recents products</h1>
-        <div class="row">
-            <div class="col-4 text-center">
-                <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="w-50" alt="">
-                <div class="font-weight-bold text-center mt-2 mb-3">
-                    <p>Luxury Sofa</p>
-                    <span class="text-danger">$600.00</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-4">
+                            <p class="font-weight-bold">
+                                Luxury Sofa
+                            </p>
+                            <p class="text-danger">
+                                $600.00
+                            </p>
+                        </div>
+
+                    </div>
+
+
                 </div>
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center m-4">
+                        <button class="text-white bg-danger sale">sale</button>
+                        <div class="flex-column mx-5">
+                            <p>Leather Glaves</p>
+                            <span class="text-danger"><del class="text-secondary">$34.00</del> $27.00</span>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-cups.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-4">
+                            <p class="font-weight-bold">
+                                Colorful Bowl
+                            </p>
+                            <p class="text-danger">
+                                $18.00
+                            </p>
+                        </div>
 
-                <img src="./public/img/products_mini/product-bag.jpg" class="w-50" alt="">
-                <div class="d-flex justify-content-center align-items-center mt-3 mb-3">
-                    <button>SALE!</button>
-                    <div class="font-weight-bold ml-5">
-                        <p>Women Bag</p>
-                        <span class="text-danger"><del class="text-secondary">$420.00</del> $350.00</span>
                     </div>
                 </div>
-
-
-                <img src="./public/img/products_mini/product-modern-sofa.jpg" class="w-50" alt="">
-                <div class="font-weight-bold text-center mt-2">
-                    <p>product-modern-sofa Sofa</p>
-                    <span class="text-danger">$900.00</span>
-                </div>
             </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-bag.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center m-4">
+                        <button class="text-white bg-danger sale">sale</button>
+                        <div class="flex-column mx-5">
+                            <p>Women Bag</p>
+                            <span class="text-danger"><del class="text-secondary">$420.00</del> $350.00</span>
+                        </div>
+                    </div>
 
-            <div class="col-4 text-center">
-                <img src="./public/img/products_mini/product-gloves.jpg" class="w-50" alt="">
-                <div class="d-flex justify-content-center align-items-center mt-3 mb-3">
-                    <button>SALE!</button>
-                    <div class="font-weight-bold ml-5">
-                        <p>Leather Gloves</p>
-                        <span class="text-danger"><del class="text-secondary">$34.00</del> $27.00</span>
+
+                </div>
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-4">
+                            <p class="font-weight-bold">
+                                Minimal T-shirt
+                            </p>
+                            <p class="text-danger">
+                                $15.00
+                            </p>
+                        </div>
+
+                    </div>
+                    <div>
+
                     </div>
                 </div>
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-4">
+                            <p class="font-weight-bold">
+                                plates Set
+                            </p>
+                            <p class="text-danger">
+                                $18.00
+                            </p>
+                        </div>
 
-                <img src="./public/img/products_mini/product-tshitr.jpg" class="w-50" alt="">
-                <div class="font-weight-bold text-center mt-2 mb-3">
-                    <p>Minimal T-shirt</p>
-                    <span class="text-danger">$15.00</span>
+                    </div>
                 </div>
-
-                <img src="./public/img/products_mini/product-bed.jpg" class="w-50" alt="">
-                <div class="font-weight-bold text-center mt-2 mb-3">
-                    <p>bed Linen</p>
-                    <span class="text-danger">$79.00</span>
-                </div>
-
-
-
             </div>
-            <div class="col-4 text-center">
-                <img src="./public/img/products_mini/product-cups.jpg" class="w-50" alt="">
-                <div class="font-weight-bold text-center mt-2 mb-3">
-                    <p>Colorful Bowl</p>
-                    <span class="text-danger">$600.00</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-4">
+                            <p class="font-weight-bold">
+                                Luxury Sofa
+                            </p>
+                            <p class="text-danger">
+                                $900.00
+                            </p>
+                        </div>
+
+                    </div>
+
+
                 </div>
-                <img src="./public/img/products_mini/product-plates.jpg" class="w-50" alt="">
-                <div class="font-weight-bold text-center mt-2 mb-3">
-                    <p>Plates set</p>
-                    <span class="text-danger">$600.00</span>
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-4">
+                            <p class="font-weight-bold">
+                                Bed Linen
+                            </p>
+                            <p class="text-danger">
+                                $79.00
+                            </p>
+                        </div>
+
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
-                <img src="./public/img/products_mini/product-shoes.jpg" class="w-50" alt="">
-                <div class="font-weight-bold text-center mt-2">
-                    <p>Minimal Shoes</p>
-                    <span class="text-danger">$60.00</span>
+                <div class="col-4">
+                    <div class="abc">
+                        <img class="img-fluid" src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="my-4">
+                            <p class="font-weight-bold">
+                                Minimal Shoes
+                            </p>
+                            <p class="text-danger">
+                                $60.00
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,7 +325,7 @@
     <!-- fin section 3 -->
 
     <!-- debut section 4 -->
-    <section id="section4" class="flex-column">
+    <section id="section4" class="flex-column container-fluid">
 
         <h1 class="white text-light mb-3">Discover Thousands Of Great Products</h1>
         <button class="bg-danger text-light">LEARN MORE</button>
@@ -188,7 +335,88 @@
 
     <!-- debut section 5 -->
 
-    <section id="section5">
+    <section id="section5" class="container-fluid mt-5">
+        <h1 class="text-center">Hot Fashion Products</h1>
+        <div class="container">
+            <div class="row justify-content-center text-center flex-nowrap">
+                <div class="col-2">
+
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid">
+
+                    <div>
+                        <p>Luxury Sofa</p>
+                        <span class="text-danger">$600.00</span>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                    <img src="./public/img/products_mini/product-gloves.jpg" class="img-fluid">
+                    <div class="d-flex">
+                        <button class="sale">SALE!</button>
+                        <div>
+                            <p>Leather Gloves</p>
+                            <span class="text-danger"><del class="text-secondary">$34.00</del>$27.00</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2">
+
+
+                    <img src="./public/img/products_mini/product-cups.jpg" class="img-fluid">
+
+                    <div>
+                        <p>Colorful Bowl</p>
+                        <span class="text-danger">$18.00</span>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                    <img src="./public/img/products_mini/product-bag.jpg" class="img-fluid">
+                    <div class="d-flex">
+                        <button class="sale">SALE!</button>
+                        <div>
+                            <p>Women Bag</p>
+                            <span class="text-danger"><del class="text-secondary">$420.00</del>$350.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+
+                    <img src="./public/img/products_mini/product-modern-sofa.jpg" class="img-fluid">
+
+                    <div>
+                        <p>Modern Sofa</p>
+                        <span class="text-danger">$900.00</span>
+                    </div>
+                </div>
+                <div class="col-2">
+
+                    <img src="./public/img/products_mini/product-tshitr.jpg" class="img-fluid">
+
+                    <div>
+                        <p>Minimal T-shirt</p>
+                        <span class="text-danger">$15.00</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <img src="./public/img/products_mini/product-plates.jpg" class="img-fluid">
+
+                    <div>
+                        <p>Plates Set</p>
+                        <span class="text-danger">$30.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center my-5">
+            <button class="mr-3"></button>
+            <button class="mr-3"></button>
+            <button class="mr-3"></button>
+            <button class="mr-3"></button>
+        </div>
 
     </section>
 
@@ -197,38 +425,49 @@
 
     <!-- debut section 6 -->
     <section id="section6" class="container-fluid">
-        <div class="row flex-nowrap mt-3">
-            <div class="col-4 d-flex flex-column text-center">
+        <div class="row  mt-3">
+            <div class="col-4 ">
+                <div class="d-flex flex-column text-center imek px-5">
+                    <i class="far fa-check-circle mb-5 mt-3"></i>
+                    <span class="font-weight-bold mb-5">TRUSTED BY 10,000+ CUSTOMERS</span>
+                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et corporis
+                        obcaecati
+                        alias aut
+                        ducimus,
+                        ratione distinctio!</p>
+                    <div><button>LEARN MORE</button></div>
+                </div>
 
-                <i class="far fa-check-circle mb-5"></i>
-                <span class="font-weight-bold mb-5">TRUSTED BY 10,000+ CUSTOMERS</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et corporis obcaecati
-                    alias aut
-                    ducimus,
-                    ratione distinctio!</p>
-                <div><button>LEARN MORE</button></div>
 
 
             </div>
 
-            <div class="col-4 d-flex flex-column text-center mx-3">
-                <i class="far fa-paper-plane mb-5"></i>
-                <span class="mb-5">VERY FAST SHIPPING</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et corporis obcaecati
-                    alias aut
-                    ducimus,
-                    ratione distinctio!</p>
-                <div><button>LEARN MORE</button></div>
+            <div class="col-4 ">
+                <div class="d-flex flex-column text-center imek px-5">
+                    <i class="far fa-paper-plane mb-5 mt-3"></i>
+                    <span class="mb-5">VERY FAST SHIPPING</span>
+                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et corporis
+                        obcaecati
+                        alias aut
+                        ducimus,
+                        ratione distinctio!</p>
+                    <div><button>LEARN MORE</button></div>
+                </div>
+
             </div>
 
-            <div class="col-4 d-flex flex-column text-center">
-                <i class="far fa-check-circle mb-5"></i>
-                <span class="font-weight-bold mb-5">TRUSTED BY 10,000+ CUSTOMERS</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et corporis obcaecati
-                    alias aut
-                    ducimus,
-                    ratione distinctio!</p>
-                <div><button>LEARN MORE</button></div>
+            <div class="col-4 ">
+                <div class="d-flex flex-column text-center imek px-5">
+                    <i class="far fa-check-circle mb-5 mt-3"></i>
+                    <span class="font-weight-bold mb-5">TRUSTED BY 10,000+ CUSTOMERS</span>
+                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et corporis
+                        obcaecati
+                        alias aut
+                        ducimus,
+                        ratione distinctio!</p>
+                    <div><button>LEARN MORE</button></div>
+                </div>
+
             </div>
         </div>
 
@@ -237,12 +476,12 @@
 
     <!-- debut footer -->
 
-    <footer>
-        <div class="row d-flex">
+    <footer class="container-fluid ">
+        <div class="row justify-content-center align-items-center px-5 ml-5">
 
-            <div class="col-4">
+            <div class="col-4 px-5">
                 <h5>ABOUT US</h5>
-                <p>
+                <p class="text-white-50 pl-0 pr-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellat provident corrupti
                     reiciendis nesciunt tempora totam, asperiores molestias illo voluptas, dolores deserunt aliquam
                     natus, officia debitis vero fugit? Incidunt mollitia ducimus cumque consequuntur sunt, a alias ex
@@ -250,21 +489,42 @@
                 </p>
             </div>
 
-            <div class="col-4">
-                <h5>RECENTS POSTS</h5>
-                <ul>
-                    <li>> Hello Word</li>
-                    <li>> Wonderful serenity has taken</li>
-                    <li>> in my soul and absorb its power</li>
-                    <li>> I hear the buzz of the little</li>
+            <div class="col-4 pb-5 pl-5">
+                <h5 class="">RECENTS POSTS</h5>
+                <ul class="pl-0">
+                    <li class="">> Hello Word</li>
+                    <li class="my-2">> Wonderful serenity has taken</li>
+                    <li class="my-2">> in my soul and absorb its power</li>
+                    <li class="my-2">> I hear the buzz of the little</li>
                 </ul>
             </div>
 
             <div class="col-4">
-                
+                <h5 class="mb-3">TAG CLOUD</h5>
+                <div>
+                    <div>
+                        <button class="m-1  btn btn-outline-light">Business</button>
+                        <button class="m-1  btn btn-outline-light">Confidence</button>
+                        <button class="m-1  btn btn-outline-light">gadgets</button>
+                    </div>
+                    <div>
+                        <button class="m-1  btn btn-outline-light">identity</button>
+                        <button class="m-1  btn btn-outline-light">logo</button>
+                        <button class="m-1  btn btn-outline-light">photography</button>
+                    </div>
+                    <div>
+                        <button class="m-1  btn btn-outline-light">time</button>
+                        <button class="m-1  btn btn-outline-light">trips</button>
+                        <button class="m-1  btn btn-outline-light">works</button>
+                    </div>
+                    <div>
+                        <button class="m-1  btn btn-outline-light">work space</button>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+    <div id="last">COPYRIGHT 2020 GOODLAYERS ALL RIGHT RESERVED</div>
 
 
 
