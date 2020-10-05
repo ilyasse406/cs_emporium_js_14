@@ -16022,6 +16022,16 @@ body {
   min-height: 200vh;
   box-sizing: border-box;
 }
+@media (min-width: 346px) and (max-width: 645px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 body header nav .navbar-brand {
   font-size: 60px;
   font-weight: bold;
@@ -16047,17 +16057,37 @@ body #section1 {
   background-color: #F3F3F3;
   position: relative;
 }
-body #section1 .row .col-7 {
+body #section1 .row .col-lg-7 {
   padding: 95px;
 }
-body #section1 .row .col-7 h2 {
+body #section1 .row .col-lg-7 h2 {
   color: #DD4545;
   font-size: 50px;
 }
-body #section1 .row .col-7 img {
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section1 .row .col-lg-7 h2 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section1 .row .col-lg-7 h2 {
+    font-size: 25px;
+  }
+}
+body #section1 .row .col-lg-7 img {
   height: 75px;
 }
-body #section1 .row .col-7 button {
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section1 .row .col-lg-7 img {
+    height: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section1 .row .col-lg-7 img {
+    height: 30px;
+  }
+}
+body #section1 .row .col-lg-7 button {
   background-color: #DD4545;
   color: white;
   border: none;
@@ -16065,28 +16095,80 @@ body #section1 .row .col-7 button {
   padding: 10px 30px;
   font-size: 10px;
 }
-body #section1 .row .col-5 img {
+body #section1 .row .col-lg-5 img {
   height: 500px;
 }
-body #section2 .row .col-4 {
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section1 .row .col-lg-5 img {
+    height: 150px;
+    margin-left: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section1 .row .col-lg-5 img {
+    height: 250px;
+  }
+}
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section2 {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section2 {
+    width: 60%;
+  }
+}
+body #section2 .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section2 .row {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section2 .row {
+    flex-wrap: wrap;
+  }
+}
+body #section2 .row .col-xl-4 {
   margin: 0 7px;
 }
-body #section2 .row .col-4:first-child {
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section2 .row .col-xl-4 {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section2 .row .col-xl-4 {
+    margin-bottom: 10px;
+  }
+}
+body #section2 .row .col-xl-4:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 80%;
   height: 200px;
-  background-color: #333;
   background-image: url("../../public/img/services/service-1.jpg");
   background-position: center;
 }
-body #section2 .row .col-4:first-child h1 {
+body #section2 .row .col-xl-4 h1 {
   color: white;
   border-bottom: solid;
   padding: 0 50px;
 }
-body #section2 .row .col-4:nth-child(2) {
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section2 .row .col-xl-4 h1 {
+    padding: 0 30px;
+    font-size: 20px;
+  }
+}
+body #section2 .row .col-xl-4:nth-child(2) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16096,12 +16178,18 @@ body #section2 .row .col-4:nth-child(2) {
   background-image: url("../../public/img/services/service-2.jpg");
   background-position: center;
 }
-body #section2 .row .col-4:nth-child(2) h1 {
+body #section2 .row .col-xl-4:nth-child(2) h1 {
   color: white;
   border-bottom: solid;
   padding: 0 70px;
 }
-body #section2 .row .col-4:nth-child(3) {
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section2 .row .col-xl-4:nth-child(2) h1 {
+    padding: 0 44px;
+    font-size: 20px;
+  }
+}
+body #section2 .row .col-xl-4:nth-child(3) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16111,28 +16199,62 @@ body #section2 .row .col-4:nth-child(3) {
   background-image: url("../../public/img/services/slider-3.jpg");
   background-position: center;
 }
-body #section2 .row .col-4:nth-child(3) h1 {
+body #section2 .row .col-xl-4:nth-child(3) h1 {
   color: white;
   border-bottom: solid;
   padding: 0 90px;
 }
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section2 .row .col-xl-4:nth-child(3) h1 {
+    padding: 0 55px;
+    font-size: 20px;
+  }
+}
 body h2 {
   font-weight: bolder;
 }
-body .container .row .col-4 .abc {
+body .container .row .col-xl-4 .abc {
   position: relative;
 }
-body .container .row .col-4 .abc:hover::before {
-  content: "CHIEN ILYASSE DE MERDE";
+body .container .row .col-xl-4 .abc img {
+  transition: all 2s;
+}
+body .container .row .col-xl-4 .abc:hover::before {
+  font-family: "Font Awesome 5 Free";
+  content: "" " View Details";
+  font-weight: 900;
   position: absolute;
   height: 0;
-  background-color: red;
-  opacity: 0.5;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
   bottom: 0;
-  animation: abc 2s;
-  animation-iteration-count: 1;
+  animation: abc 1s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
 }
-body .container .row .col-4 .sale {
+body .container .row .col-xl-4 .abc:hover::after {
+  font-family: "Font Awesome 5 Free";
+  content: "" " Add to cart";
+  font-weight: 900;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  background-color: red;
+  color: white;
+  opacity: 0.8;
+  bottom: 0;
+  animation: abc 1s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+  left: 50%;
+}
+body .container .row .col-xl-4 .sale {
   color: green;
   background-color: #DD4545;
   border-radius: 100px;
@@ -16146,53 +16268,62 @@ body #section4 {
   justify-content: center;
   width: 100%;
   height: 800px;
-  background-color: #333;
   background-image: url("../../public/img/cta-bg.jpg");
   background-position: center;
+}
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section4 h1 {
+    font-size: 20px;
+  }
 }
 body #section4 button {
   border: none;
   padding: 10px;
   border-radius: 5px;
 }
-body #section6 .col-4 {
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section4 button {
+    font-size: 10px;
+  }
+}
+body #section6 .col-xl-4 {
   padding-bottom: 10px;
 }
-body #section6 .col-4:first-child div:first-child {
+body #section6 .col-xl-4:first-child div:first-child {
   height: 370px;
   background-color: #F3F2F3;
 }
-body #section6 .col-4:first-child div:first-child i {
+body #section6 .col-xl-4:first-child div:first-child i {
   font-size: 30px;
 }
-body #section6 .col-4:first-child div:first-child button {
+body #section6 .col-xl-4:first-child div:first-child button {
   border: none;
   border-radius: 5px;
   padding: 5px 20px;
   background-color: #343A40;
   color: white;
 }
-body #section6 .col-4:nth-child(2) div {
+body #section6 .col-xl-4:nth-child(2) div {
   height: 370px;
   background-color: #DD4545;
   color: white;
 }
-body #section6 .col-4:nth-child(2) div i {
+body #section6 .col-xl-4:nth-child(2) div i {
   font-size: 30px;
 }
-body #section6 .col-4:nth-child(2) div button {
+body #section6 .col-xl-4:nth-child(2) div button {
   border: none;
   border-radius: 5px;
   padding: 5px 20px;
 }
-body #section6 .col-4:nth-of-type(3) div {
+body #section6 .col-xl-4:nth-of-type(3) div {
   height: 370px;
   background-color: #F3F2F3;
 }
-body #section6 .col-4:nth-of-type(3) div i {
+body #section6 .col-xl-4:nth-of-type(3) div i {
   font-size: 30px;
 }
-body #section6 .col-4:nth-of-type(3) div button {
+body #section6 .col-xl-4:nth-of-type(3) div button {
   border: none;
   border-radius: 5px;
   padding: 5px 20px;
@@ -16216,8 +16347,25 @@ body #last {
   background-color: black;
   text-align: center;
   padding: 20px 0px;
-  color: #343A40;
   font-weight: bold;
+}
+@media (min-width: 346px) and (max-width: 645px) {
+  body footer .col-xl-4 {
+    padding: 50px 0;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body footer .col-xl-4 {
+    margin-right: 50px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body footer .col-xl-4 h5 {
+    font-size: 40px;
+  }
 }
 body #section5 .sale {
   background-color: #DD4545;
@@ -16245,8 +16393,94 @@ body #section1 #popup {
   z-index: 1;
   border-radius: 30px;
 }
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section1 #popup {
+    left: 30px;
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section1 #popup {
+    left: 85px;
+    width: 600px;
+    height: 500px;
+  }
+}
 body #section1 #popup #exit {
-  padding-left: 400px;
+  padding-right: 500px;
+}
+body #section5 .center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+body #section5 .center .wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 76em;
+}
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section5 .center .wrapper {
+    width: 17em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+  body #section5 .center .wrapper {
+    width: 35em;
+  }
+}
+body #section5 .center .wrapper .inner {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+body #section5 .center .wrapper .inner .card {
+  border: none;
+}
+body #section5 .center .wrapper .inner .card img {
+  display: block;
+  width: 17.5em;
+}
+body #section5 .center .wrapper .inner .card .content {
+  padding: 1em;
+  text-align: center;
+}
+body #section5 .center .wrapper .inner .card div h1 {
+  margin: 0.35em 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+body #section5 .center .wrapper .inner .card div h3 {
+  margin: 0.35em 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+body #section5 .center .map {
+  margin-top: 1em;
+}
+body #section5 .center .map button {
+  all: unset;
+  cursor: pointer;
+  margin: 0 0.125em;
+  position: relative;
+  user-select: none;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+body #section5 .center .map button:active::after {
+  background: red;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
 }
 
 @keyframes abc {
@@ -16256,7 +16490,7 @@ body #section1 #popup #exit {
   }
   100% {
     width: 100%;
-    height: 50%;
+    height: 30%;
   }
 }
 

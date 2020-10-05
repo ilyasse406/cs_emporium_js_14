@@ -16122,15 +16122,43 @@ body h2 {
 body .container .row .col-4 .abc {
   position: relative;
 }
+body .container .row .col-4 .abc img {
+  transition: all 2s;
+}
 body .container .row .col-4 .abc:hover::before {
-  content: "CHIEN ILYASSE DE MERDE";
+  font-family: "Font Awesome 5 Free";
+  content: "" " View Details";
+  font-weight: 900;
   position: absolute;
   height: 0;
-  background-color: red;
-  opacity: 0.5;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
   bottom: 0;
-  animation: abc 2s;
-  animation-iteration-count: 1;
+  animation: abc 1s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+}
+body .container .row .col-4 .abc:hover::after {
+  font-family: "Font Awesome 5 Free";
+  content: "" " Add to cart";
+  font-weight: 900;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0;
+  background-color: red;
+  color: white;
+  opacity: 0.8;
+  bottom: 0;
+  animation: abc 1s;
+  animation-fill-mode: forwards;
+  max-width: 50%;
+  left: 50%;
 }
 body .container .row .col-4 .sale {
   color: green;
@@ -16256,7 +16284,7 @@ body #section1 #popup #exit {
   }
   100% {
     width: 100%;
-    height: 50%;
+    height: 30%;
   }
 }
 
