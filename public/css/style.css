@@ -16429,7 +16429,7 @@ body #section5 .center .wrapper {
 }
 @media (min-width: 768px) and (max-width: 1366px) {
   body #section5 .center .wrapper {
-    width: 35em;
+    width: 36em;
   }
 }
 body #section5 .center .wrapper .inner {
@@ -16470,6 +16470,31 @@ body #section5 .center .map button {
   border-radius: 100%;
   height: 1em;
   width: 1em;
+}
+@media (min-width: 1366px) {
+  body #section5 .center .map button:nth-child(5) {
+    display: none;
+  }
+  body #section5 .center .map button:nth-child(6) {
+    display: none;
+  }
+  body #section5 .center .map button:nth-child(7) {
+    display: none;
+  }
+  body #section5 .center .map button:nth-child(8) {
+    display: none;
+  }
+  body #section5 .center .map button:nth-child(9) {
+    display: none;
+  }
+}
+@media (min-width: 813px) {
+  body #section5 .center .map button:nth-child(8) {
+    display: none;
+  }
+  body #section5 .center .map button:nth-child(9) {
+    display: none;
+  }
 }
 body #section5 .center .map button:active::after {
   background: red;

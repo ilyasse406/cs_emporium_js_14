@@ -1,4 +1,3 @@
-
 // changement de couleur du background
 let noir = document.getElementById("noir")
 let blanc = document.getElementById("blanc")
@@ -16,7 +15,7 @@ let section6 = document.getElementById("section6")
 
 noir.addEventListener("click", (e) => {
     e.preventDefault()
-    
+
     section1.style.backgroundColor = "black"
     section2.style.backgroundColor = "black"
     section3.style.backgroundColor = "black"
@@ -30,7 +29,7 @@ noir.addEventListener("click", (e) => {
 })
 blanc.addEventListener("click", (e) => {
     e.preventDefault()
-    
+
     section1.style.backgroundColor = ""
     section2.style.backgroundColor = ""
     section3.style.backgroundColor = ""
@@ -58,12 +57,12 @@ window.addEventListener("scroll", () => {
         header.style.zIndex = 2
         empo.setAttribute("class", "d-block pt-4 pr-5")
         maintitle.style.display = "none"
-        
+
     } else {
         header.style.position = "static"
         empo.setAttribute("class", "d-none")
         maintitle.style.display = ""
-        
+
     }
 })
 
@@ -111,7 +110,7 @@ window.addEventListener("scroll", () => {
         popup.style.width = "60%"
         popup.style.height = "50%"
         popup.style.zIndex = 2
-        
+
 
     }
 })
@@ -139,26 +138,88 @@ const buttonsWrapper = document.querySelector(".map");
 const slides = document.querySelector(".inner");
 
 buttonsWrapper.addEventListener("click", e => {
-  if (e.target.nodeName === "BUTTON") {
-    Array.from(buttonsWrapper.children).forEach(item =>
-      item.classList.remove("active")
-    );
-    if (e.target.classList.contains("first")) {
-      slides.style.transform = "translateX(-11%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("second")) {
-      slides.style.transform = "translateX(-22%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains('third')){
-      slides.style.transform = 'translatex(-33%)';
-      e.target.classList.add('active');
-    
-    } else if (e.target.classList.contains('quatre')){
-      slides.style.transform = 'translatex(-44.5%)';
-      e.target.classList.add('active');
+    if (e.target.nodeName === "BUTTON") {
+        Array.from(buttonsWrapper.children).forEach(item =>
+            item.classList.remove("active")
+        );
+        if (e.target.classList.contains("first")) {
+            slides.style.transform = "translateX(-0%)";
+            e.target.classList.add("active");
+        } else if (e.target.classList.contains("second")) {
+            slides.style.transform = "translateX(-11%)";
+            e.target.classList.add("active");
+        } else if (e.target.classList.contains('third')) {
+            slides.style.transform = 'translatex(-23%)';
+            e.target.classList.add('active');
+
+        } else if (e.target.classList.contains('quatre')) {
+            slides.style.transform = 'translatex(-33%)';
+            e.target.classList.add('active');
+        
+        } else if (e.target.classList.contains('cinq')) {
+            slides.style.transform = 'translatex(-45%)';
+            e.target.classList.add('active');
+        
+        } else if (e.target.classList.contains('six')) {
+            slides.style.transform = 'translatex(-57%)';
+            e.target.classList.add('active');
+        
+        } else if (e.target.classList.contains('sept')) {
+            slides.style.transform = 'translatex(-67%)';
+            e.target.classList.add('active');
+        
+        } else if (e.target.classList.contains('huit')) {
+            slides.style.transform = 'translatex(-78%)';
+            e.target.classList.add('active');
+        
+        } 
     }
-  }
 });
+
+
+
+// function myFunction(x) {
+//     buttonsWrapper.addEventListener("click", e => {
+//         if (e.target.nodeName === "BUTTON") {
+//             Array.from(buttonsWrapper.children).forEach(item =>
+//                 item.classList.remove("active")
+//             );
+//             if (e.target.classList.contains("first")) {
+//                 slides.style.transform = "translateX(-0%)";
+//                 e.target.classList.add("active");
+//             } else if (e.target.classList.contains("second")) {
+//                 slides.style.transform = "translateX(-23%)";
+//                 e.target.classList.add("active");
+//             } else if (e.target.classList.contains('third')) {
+//                 slides.style.transform = 'translatex(-45%)';
+//                 e.target.classList.add('active');
+    
+//             } else if (e.target.classList.contains('quatre')) {
+//                 slides.style.transform = 'translatex(-67%)';
+//                 e.target.classList.add('active');
+            
+//             } else if (e.target.classList.contains('cinq')) {
+//                 slides.style.transform = 'translatex(-77%)';
+//                 e.target.classList.add('active');
+            
+//             } else if (e.target.classList.contains('six')) {
+//                 slides.style.transform = 'translatex(-42%)';
+//                 e.target.classList.add('active');
+            
+//             } else if (e.target.classList.contains('sept')) {
+//                 slides.style.transform = 'translatex(-49%)';
+//                 e.target.classList.add('active');
+//             }
+//         }
+//     });
+// }
+
+// var x = window.matchMedia("(min-width: 992px)")
+// myFunction(x) // Call listener function at run time
+// x.addListener(myFunction) // Attach listener function on state changes
+
+
+
 
 
 
@@ -228,8 +289,8 @@ buttonsWrapper.addEventListener("click", e => {
 
 //      // select ul children 'li' elements;
 //     const li=ul[0].children
-      
-     
+
+
 //      var active;
 
 //      for(let i=0;i<li.length;i++){

@@ -5,9 +5,9 @@
 
 
 @mixin circle($i) 
-  border-radius: 100%
-  height: $i
-  width: $i
+    border-radius: 100%
+    height: $i
+    width: $i
 
 
 
@@ -427,7 +427,7 @@ body
                 @media (min-width: 346px) and ( max-width: 645px)
                     width: 17em
                 @media (min-width: 768px) and ( max-width: 1366px)
-                    width: 35em
+                    width: 36em
                 .inner 
                     display: flex
                     grid-gap: 1em
@@ -466,6 +466,35 @@ body
                     position: relative
                     user-select: none
                     @include circle(1em)
+
+                    @media (min-width: 1366px)
+                        &:nth-child(5)
+                            display: none
+                        &:nth-child(6)
+                            display: none
+                        &:nth-child(7)
+                            display: none
+                        &:nth-child(8)
+                            display: none
+                        &:nth-child(9)
+                            display: none
+                    @media (min-width: 813px)
+                        &:nth-child(8)
+                            display: none
+                        &:nth-child(9)
+                            display: none
+                        
+                            
+                        
+                    @media (min-width: 375px)
+                        
+                    
+                        
+
+                    
+                            
+                    
+                    
                     &:active
                         &::after
                             background: red
@@ -475,6 +504,21 @@ body
                             transform: translate(-50%, -50%)
                             top: 50%
                             @include circle(1em)
+
+
+// @media (min-width: 1200px)
+//     .center
+        
+//         .cinq
+//             display: none
+//         .six
+//             display: none
+//         .sept
+//             display: none
+                    
+                    
+@media (min-width: 768px) and ( max-width: 1366px)
+                    
                             
                     
                     
