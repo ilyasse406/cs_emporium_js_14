@@ -124,6 +124,8 @@ connexion.addEventListener("click", (e) => {
     e.preventDefault()
     popup.setAttribute("class", "bg-white text-center")
     let exit = document.getElementById("exit")
+    
+    
     exit.addEventListener("click", (e) => {
         popup.setAttribute("class", "bg-white text-center d-none")
         e.preventDefault()
@@ -152,7 +154,7 @@ window.addEventListener("scroll", () => {
         popup.style.position = "fixed"
         popup.style.top = "250px"
         popup.style.width = "60%"
-        popup.style.height = "50%"
+        popup.style.height = "auto"
         popup.style.zIndex = 2
 
 
