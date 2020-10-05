@@ -9,12 +9,38 @@ let section3 = document.getElementById("section3")
 let section4 = document.getElementById("section4")
 let section5 = document.getElementById("section5")
 let section6 = document.getElementById("section6")
+let card1 = document.getElementById("card1")
+let card2 = document.getElementById("card2")
+let card3 = document.getElementById("card3")
+let card4 = document.getElementById("card4")
+let card5 = document.getElementById("card5")
+let card6 = document.getElementById("card6")
+let card7 = document.getElementById("card7")
+let card8 = document.getElementById("card8")
+let card9 = document.getElementById("card9")
 
+let custom1 = document.getElementById("custom1")
+let custom2 = document.getElementById("custom2")
+let custom3 = document.getElementById("custom3")
+
+
+let header = document.querySelector("header")
+let navbar = document.querySelector("nav")
 
 
 
 noir.addEventListener("click", (e) => {
     e.preventDefault()
+    card1.style.backgroundColor = "black"
+    card2.style.backgroundColor = "black"
+    card3.style.backgroundColor = "black"
+    card4.style.backgroundColor = "black"
+    card5.style.backgroundColor = "black"
+    card6.style.backgroundColor = "black"
+    card7.style.backgroundColor = "black"
+    card8.style.backgroundColor = "black"
+    card9.style.backgroundColor = "black"
+
 
     section1.style.backgroundColor = "black"
     section2.style.backgroundColor = "black"
@@ -26,9 +52,27 @@ noir.addEventListener("click", (e) => {
     body.style.color = "white"
     empo.style.color = "black"
 
+    custom1.style.color ="black"
+    custom3.style.color = "black"
+
+
+    navbar.setAttribute("class", "navbar navbar-expand-lg navbar-light bg-dark d-flex flex-column")
+
+
+
 })
 blanc.addEventListener("click", (e) => {
     e.preventDefault()
+
+    card1.style.backgroundColor = ""
+    card2.style.backgroundColor = ""
+    card3.style.backgroundColor = ""
+    card4.style.backgroundColor = ""
+    card5.style.backgroundColor = ""
+    card6.style.backgroundColor = ""
+    card7.style.backgroundColor = ""
+    card8.style.backgroundColor = ""
+    card9.style.backgroundColor = ""
 
     section1.style.backgroundColor = ""
     section2.style.backgroundColor = ""
@@ -39,12 +83,12 @@ blanc.addEventListener("click", (e) => {
     body.style.backgroundColor = ""
     body.style.color = ""
 
+    navbar.setAttribute("class", "navbar navbar-expand-lg navbar-light bg-light d-flex flex-column")
+
 })
 
 // nav bar  fix
 
-let header = document.querySelector("header")
-let navbar = document.querySelector("nav")
 let empo = document.getElementById("empo")
 let maintitle = document.getElementById("main-title")
 
@@ -149,7 +193,7 @@ buttonsWrapper.addEventListener("click", e => {
             slides.style.transform = "translateX(-11%)";
             e.target.classList.add("active");
         } else if (e.target.classList.contains('third')) {
-            slides.style.transform = 'translatex(-23%)';
+            slides.style.transform = 'translatex(-22%)';
             e.target.classList.add('active');
 
         } else if (e.target.classList.contains('quatre')) {
@@ -170,6 +214,11 @@ buttonsWrapper.addEventListener("click", e => {
         
         } else if (e.target.classList.contains('huit')) {
             slides.style.transform = 'translatex(-78%)';
+            e.target.classList.add('active');
+        
+         
+        } else if (e.target.classList.contains('neuf')) {
+            slides.style.transform = 'translatex(-90%)';
             e.target.classList.add('active');
         
         } 

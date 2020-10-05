@@ -16384,6 +16384,11 @@ body #section5 button {
 body header #empo {
   font-size: 30px;
 }
+@media (min-width: 346px) and (max-width: 645px) {
+  body #section1 {
+    height: 70%;
+  }
+}
 body #section1 #popup {
   position: absolute;
   top: 50px;
@@ -16395,19 +16400,28 @@ body #section1 #popup {
 }
 @media (min-width: 346px) and (max-width: 645px) {
   body #section1 #popup {
-    left: 30px;
-    width: 300px;
+    left: 80px;
   }
 }
 @media (min-width: 768px) and (max-width: 1366px) {
   body #section1 #popup {
-    left: 85px;
+    left: 150px;
     width: 600px;
-    height: 500px;
+    height: 1100px;
+  }
+  body #section1 #popup #exit {
+    padding-right: 500px;
   }
 }
-body #section1 #popup #exit {
-  padding-right: 500px;
+@media (min-width: 768px) and (max-width: 1366px) and (min-width: 346px) and (max-width: 645px) {
+  body #section1 #popup #exit {
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1366px) and (min-width: 768px) and (max-width: 1366px) {
+  body #section1 #popup {
+    padding-right: 0;
+  }
 }
 body #section5 .center {
   align-items: center;
